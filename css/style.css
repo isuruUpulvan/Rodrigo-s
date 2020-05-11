@@ -43,6 +43,11 @@ Table of Content:
 /*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Oswald:300, 500, 700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+@font-face {
+  src: url(../fonts/queenbee.regular.ttf);
+  font-family: queenbee;
+}
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
@@ -67,7 +72,12 @@ body {
   font-weight: normal;
   color: #777777; }
 
-h1,
+h1{
+  font-family: queenbee;
+  font-weight: 700;
+  font-size: 80px;
+  color: #222222;
+}
 h2,
 h3,
 h4,
@@ -166,13 +176,14 @@ button:focus {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 0;
-    border: 3px solid #f9f9ff; }
+    border: 3px solid #b6d3df; }
     @media (max-width: 991px) {
       .main_title .round-planet {
         display: none; } }
     .main_title .round-planet.gray-border {
-      border: 3px solid rgba(234, 234, 234, 0.52); }
+      border: 3px solid #b6d3df; }
   .main_title .round-planet.planet2 {
+    border: 3px solid #b6d3df;
     width: 100px;
     height: 100px; }
   .main_title .round-planet .shape.shape1 {
@@ -672,33 +683,40 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner {
-  background: #44bfe0;
+  background: #ffffff;
   position: relative; }
   @media (max-width: 991px) {
     .home_banner {
       height: auto; } }
   .home_banner .full_height {
+    background-image: url(../img/banner/BG-01.jpg);
+    background-position: right top;
+    background-size: cover;
     min-height: 100vh; }
   .home_banner .banner_left {
-    background: #f9f9ff;
     height: 100vh;
     padding: 0 16%; }
     @media (max-width: 480px) {
       .home_banner .banner_left {
         padding-top: 150px; } }
     .home_banner .banner_left h1 {
-      font-size: 60px;
-      margin-bottom: 25px;
+      font-family: queenbee;
+      font-weight: bold;
+      font-size: 80px;
+      margin-left:30%;
+      margin-top: 230px;
       text-transform: capitalize;
-      font-weight: 300; }
+      font-weight: 500; }
       @media (max-width: 480px) {
         .home_banner .banner_left h1 {
           font-size: 36px; } }
     .home_banner .banner_left p {
+      text-align: center;
       max-width: 510px;
       font-weight: 400; }
     .home_banner .banner_left .main_btn {
-      margin-top: 40px;
+      margin-left:30%;
+      margin-bottom: 40px;
       max-width: 220px; }
   .home_banner .banner_right .round-planet.planet {
     top: 0; }
@@ -718,6 +736,7 @@ button:focus {
       .home_banner .banner_right .round-planet {
         display: none; } }
   .home_banner .banner_right .round-planet.planet2 {
+    border: 3px solid #b6d3df;
     width: 430px;
     height: 430px;
     left: 50%; }
@@ -831,9 +850,9 @@ button:focus {
     opacity: .1; } }
   .home_banner .face-img {
     position: absolute;
-    width: 17%;
+    width: 25%;
     left: 50%;
-    top: 50%;
+    top: 25%;
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -3286,7 +3305,7 @@ h6 {
     .menu_area {
       padding: 50px 0; } }
   .menu_area .round-planet {
-    border: 3px solid rgba(234, 234, 234, 0.52); }
+    border: 3px solid #b6d3df; }
   .menu_area.white {
     background: #ffffff; }
 
