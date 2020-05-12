@@ -76,7 +76,7 @@ h1{
   font-family: queenbee;
   font-weight: 700;
   font-size: 80px;
-  color: #222222;
+  color: #2e6079;
 }
 h2,
 h3,
@@ -322,7 +322,7 @@ button:focus {
     position: relative;
     z-index: 10;
     font-size: 48px;
-    color: #222222;
+    color: #2e6079;
     font-weight: 300;
     margin-bottom: 12px;
     text-transform: capitalize; }
@@ -947,9 +947,11 @@ button:focus {
     background: #f9f9ff;
     z-index: 1; }
     .banner_area .banner_inner .banner_content h1 {
-      color: #000000;
+      font-weight: bold;
+      font-size: 80px;
+      color: #2e6079;
       margin-bottom: 0px;
-      font-weight: 300;
+      font-weight: 500;
       margin-top: 30px; }
     .banner_area .banner_inner .banner_content .page_link a {
       font-size: 14px;
@@ -3294,6 +3296,81 @@ h6 {
     z-index: -1; }
 
 /* End Story Area css
+============================================================================================ */
+/* Start Menu page css
+============================================================================================ */
+.menu_page {
+  overflow: hidden;
+  background: #f9f9ff;
+  padding: 20 0 20; }
+  @media (max-width: 992px) {
+    .menu_page {
+      padding: 50px 0; } }
+  .menu_page .round-planet {
+    border: 3px solid #b6d3df; }
+  .menu_page.white {
+    background-color: #ffffff;
+    /* background-image: url(../img/banner/BG-04.jpg);
+    background-position: inherit;
+    background-size:cover;  */
+  }
+
+.page_inner .col-lg-5 {
+  vertical-align: middle;
+  align-self: center; }
+.page_inner.h2 {
+  color: #C71585; }
+.page_inner .menu_list {
+  height: 100%;
+  margin-right: -15px;
+  padding-right: 60px; }
+  @media (max-width: 1160px) {
+    .page_inner .menu_list {
+      padding-right: 0;
+      margin-bottom: 25px; } }
+  .page_inner .menu_list:last-child {
+    margin-left: 0; }
+  .page_inner .menu_list h3 {
+    color: #222222;
+    font-size: 48px; }
+  .page_inner .menu_list p {
+    margin-bottom: 0px;
+    font-size: 14px; }
+  .page_inner .menu_list .list li {
+    padding-bottom: 30px; }
+    .page_inner .menu_list .list li:last-child {
+      padding-bottom: 0; }
+    .page_inner .menu_list .list li h4 {
+      font-size: 21px;
+      margin-bottom: 12px;
+      font-weight: 300; }
+      @media (max-width: 420px) {
+        .page_inner .menu_list .list li h4 {
+          font-size: 16px; } }
+      .page_inner .menu_list .list li h4:after {
+        margin-right: 15px;
+        content: '---------------------------';
+        float: right;
+        color: #777777; }
+        @media (max-width: 1024px) {
+          .page_inner .menu_list .list li h4:after {
+            content: '---------------------------------------------------'; } }
+        @media (max-width: 992px) {
+          .page_inner .menu_list .list li h4:after {
+            content: '';
+            float: none; } }
+      .page_inner .menu_list .list li h4 span {
+        float: right;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700; }
+    @media (max-width: 420px) {
+      .page_inner .menu_list .list li p {
+        font-size: 14px; } }
+.page_inner .menu_img {
+  margin-left: -98px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+/* end Menu page css
 ============================================================================================ */
 /* Menu List Area css
 ============================================================================================ */
