@@ -45,7 +45,7 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 
 @font-face {
-  src: url(../fonts/queenbee.regular.ttf);
+  src: url(../fonts/BilboSwashCaps-Regular.ttf);
   font-family: queenbee;
 }
 /*---------------------------------------------------- */
@@ -324,6 +324,7 @@ button:focus {
     font-size: 48px;
     color: #2e6079;
     font-weight: 300;
+    font-weight: bold;
     margin-bottom: 12px;
     text-transform: capitalize; }
     @media (max-width: 991px) {
@@ -683,30 +684,47 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner {
-  background: #ffffff;
+  /* background: #ffffff; */
   position: relative; }
   @media (max-width: 991px) {
     .home_banner {
       height: auto; } }
   .home_banner .full_height {
-    background-image: url(../img/banner/BG-01.jpg);
-    background-position: right top;
-    background-size: cover;
+    background-image: url(../img/covers/rod_6.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat:no-repeat;
     min-height: 100vh; }
-  .home_banner .banner_left {
+  .home_banner .full_height h1{
+      font-family: queenbee;
+      font-size: 60px;
+      text-align: center;
+      margin-top:32%;
+      text-transform: capitalize;
+      font-weight: 500;}
+  .home_banner .full_height p {
+    text-align: center;
+    max-width: 860px; 
+    margin-left:auto;
+    margin-top:30%;
+    font-size: 15px;
+    margin-right:auto;
+    font-weight: 400; }
+  .home_banner .full_height .main_btn {
+        background: #be197f;
+        border: #be197f;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 40px;
+        max-width: 220px; }
+  
+  /* .home_banner .banner_left {
     height: 100vh;
     padding: 0 16%; }
     @media (max-width: 480px) {
       .home_banner .banner_left {
-        padding-top: 150px; } }
-    .home_banner .banner_left h1 {
-      font-family: queenbee;
-      font-weight: bold;
-      font-size: 80px;
-      margin-left:30%;
-      margin-top: 230px;
-      text-transform: capitalize;
-      font-weight: 500; }
+        padding-top: 150px; } 
       @media (max-width: 480px) {
         .home_banner .banner_left h1 {
           font-size: 36px; } }
@@ -717,7 +735,7 @@ button:focus {
     .home_banner .banner_left .main_btn {
       margin-left:30%;
       margin-bottom: 40px;
-      max-width: 220px; }
+      max-width: 220px; } */
   .home_banner .banner_right .round-planet.planet {
     top: 0; }
   .home_banner .banner_right .round-planet {
@@ -849,10 +867,10 @@ button:focus {
   1000% {
     opacity: .1; } }
   .home_banner .face-img {
-    position: absolute;
+    position:absolute;
     width: 25%;
-    left: 50%;
-    top: 25%;
+    left: 100%;
+    top: 50%;
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -3211,6 +3229,9 @@ h6 {
 /* Start top-dish Area 
 ============================================================================================ */
 .top_dish_area {
+  background: url(../img/covers/rod_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 180px 0 120px; }
   @media (max-width: 992px) {
     .top_dish_area {
@@ -3222,6 +3243,7 @@ h6 {
 .single_dish .thumb {
   overflow: hidden; }
 .single_dish h4 {
+  
   font-size: 21px;
   font-weight: 300;
   text-transform: capitalize;
@@ -3359,6 +3381,10 @@ h6 {
           .page_inner .menu_list .list li h4:after {
             content: '';
             float: none; } }
+        @media (max-width: 341px) {
+          .page_inner .menu_list .list li h4:after {
+            content: '-----';
+            float: none; } }
       .page_inner .menu_list .list li h4 span {
         float: right;
         font-family: "Roboto", sans-serif;
@@ -3375,8 +3401,9 @@ h6 {
 /* Menu List Area css
 ============================================================================================ */
 .menu_area {
-  overflow: hidden;
-  background: #f9f9ff;
+  background-image: url(../img/covers/rod_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 180px 0 120px; }
   @media (max-width: 992px) {
     .menu_area {
@@ -3418,7 +3445,7 @@ h6 {
           font-size: 16px; } }
       .menu_inner .menu_list .list li h4:after {
         margin-right: 15px;
-        content: '---------------------------';
+        content: '   ';
         float: right;
         color: #777777; }
         @media (max-width: 1024px) {
@@ -3439,6 +3466,16 @@ h6 {
   margin-left: -98px;
   padding-top: 80px;
   padding-bottom: 80px; }
+
+.menu_inner  .main_btn {
+  background: #be197f;
+  border: #be197f;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  max-width: 220px; }
 
 /* End Menu List Area css
 ============================================================================================ */
@@ -3845,3 +3882,79 @@ h6 {
       color: #f34949; }
 
 /*# sourceMappingURL=style.css.map */
+.card {
+  display: grid;
+  grid-template-columns: 100%;
+  max-height: 300px;
+  grid-template-rows: 60% 20% 20%;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 15px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.card-image {
+  grid-area: image;
+  /* background: url("../img/galleryImg/img03.JPG"); */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 5px;
+
+}
+.card-text p {
+  color: black;
+  font-size:15px;
+  text-align: center;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+.card-stats .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats .border {
+  border-left: center #ffffff;
+  height: 40px;
+}
+.card-stats .value{
+  font-size:13px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.card-stats .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
