@@ -44,17 +44,40 @@
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-							<li class="nav-item active"><a class="nav-link" href="menu.html">Menu</a></li>
-							<li class="nav-item"><a class="nav-link" href="order-now.html">Order Now</a></li>
+							<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+							<li class="nav-item active"><a class="nav-link" href="order-now.html">Order Now</a></li>
 							<li class="nav-item"><a href="gallery.html" class="nav-link ">Gallery</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<!-- <li class="nav-item"><a class="nav-link" href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart</a></li> -->
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="cart" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i> Cart</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#" class="shop-item-photo">
+											<img src="img/dish/d1.jpg" alt="" style="width: 50px; height: 50px;" />
+										</a>
+										<a href="#" class="shop-item-link">Delica omtantur</a>
+										<p class="shop-item-price">2 - $19</p>
+									</li>
+									<!-- <li>
+										<a href="#" class="shop-item-photo">
+											<img src="img/dish/d1.jpg" alt="" />
+										</a>
+										<a href="#" class="shop-item-link">Delica omtantur</a>
+										<p class="shop-item-price">2 - $19</p>
+									</li> -->
+									<li class="shop-total-price">
+										<a href="#" class="shop-btn">Cart</a>
+										<span>Total: $0.00</span>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<!--=======
 	<!--================Header Menu Area =================-->
 
 	<!--================ Banner Area =================-->
@@ -79,15 +102,15 @@
 		</div>
 	</section>
 	<!--================End Banner Area =================-->
-	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	<ul class="nav nav-pills justify-content-center" id="myTab" role="tablist" style="padding-top: 20px;">
 		<li class="nav-item">
-		  <a class="nav-link active" style="color: #2e6079; font-size: 20px; font-family: serif;" id="savoury-tab" data-toggle="tab" href="#savoury" role="tab" aria-controls="savoury" aria-selected="true">Savoury</a>
+		  <a class="nav-link active" style="color: #2e6079; font-size: 18px;" id="savoury-tab" data-toggle="tab" href="#savoury" role="tab" aria-controls="savoury" aria-selected="true">Savoury</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" style="color: #2e6079; font-size: 20px; font-family: serif;" id="sweets-tab" data-toggle="tab" href="#sweets" role="tab" aria-controls="sweets" aria-selected="false">Sweets</a>
+		  <a class="nav-link" style="color: #2e6079; font-size: 18px;" id="sweets-tab" data-toggle="tab" href="#sweets" role="tab" aria-controls="sweets" aria-selected="false">Sweets</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" style="color: #2e6079; font-size: 20px; font-family: serif;" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Beverages</a>
+		  <a class="nav-link" style="color: #2e6079; font-size: 18px;" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Beverages</a>
 		</li>
 	  </ul>
 	  <div class="tab-content" id="myTabContent">
